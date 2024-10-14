@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+#app canvas {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: white;
+  touch-action: none;
+  z-index: 1;
+}
+
+#controls {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#controls :last-child {
+  margin-right: 0;
+}
+
+select {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 5px 0 0;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+select option {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 5px 0 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #000;
+  font-size: 20px;
+  background: #ebebeb;
+  transition: background-color ease-in 0.3s;
+}
+
+button:hover {
+  background: lightgreen;
+  transition: background-color ease-out 0.3s;
+}
+
+canvas {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+#action-traces {
+  border: 1px solid #ccc;
+  padding: 5px;
+  max-height: 350px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 700px) {
+  #controls {
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  button, select {
+    width: calc(50% - 10px);
+    margin: 5px;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  #app {
+    height: 80vh;
+    width: 100%;
+  }
+
+  #action-traces {
+    max-height: 60px;
+    padding: 0;
+    font-size: 10px;
+    width: 175px;
+  }
+
+  #boardconfig {
+    margin: 2px;
+    font-size: 14px;
+  }
+}
