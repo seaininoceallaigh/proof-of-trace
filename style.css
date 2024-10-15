@@ -99,7 +99,7 @@ canvas {
 
 @media (max-width: 700px) {
   #controls {
-    width: 100%;
+    width: 96%;
     bottom: 0;
     top: auto;
     right: 0;
