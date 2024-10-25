@@ -92,7 +92,7 @@ canvas.addEventListener('pointerup', e => {
     onComplete(() => {
       localPiece.z = 0;
       if (board.check()) {
-        alert('Hey Blas, you mined 1 Trace. Exchange rate $0.05.');
+        alert('Hey Jimmy, you mined 1 Trace. Exchange rate $0.05.');
         board.pieces = [];
       }
     }).
