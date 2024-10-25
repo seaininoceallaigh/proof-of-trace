@@ -1,23 +1,5 @@
 /**
- * Simple Jigsaw Puzzle.
- *
- * Another simple implementation of jigsaw puzzle. 
- * I tried to make it as simply and as fast as possible, 
- * so the resulting code is absolutely not optimized.
- * The pictures used are not mine, I found them 
- * on the Internet (God bless the Internet!).
- *
- * I had to add the word 'game' to this description, 
- * because people like to search for that word.
- *
- * - added picture selection;
- * - added board configuration selection;
- * - changed RADIUS according to the size of the board;
- * - added window resize event handler;
- * - made the puzzle respond to touch events (thanks to aminovmunir@hahayka for spotting the issue);
- *
- * @version 0.1.5
- * @author Denis Khakimov <denisdude@gmail.com>
+ * Simple Proof of Trace Problem.
  */
 
 const FPS = 30;
